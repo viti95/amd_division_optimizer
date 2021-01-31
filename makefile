@@ -1,12 +1,12 @@
 CC=x86_64-w64-mingw32-gcc
 
-all: udiv div
+all: udiv sdiv
 
 udiv: udiv.o
 	$(CC) -o udiv udiv.o
 
-div: div.o
-	$(CC) -o div div.o
+sdiv: sdiv.o
+	$(CC) -o sdiv sdiv.o
 
 clean:
 	$(RM) *.o *.exe
